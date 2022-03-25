@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="24dp"
+        android:text="HERMES"
+        android:fontFamily="@font/bebas"
+        android:textSize="32dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sub_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Get Smart..."
+        android:textColor="#FFFFFF"
+        android:textSize="8dp"
+        app:layout_constraintStart_toStartOf="@+id/topic"
+        app:layout_constraintTop_toBottomOf="@+id/topic" />
+
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sub_topic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topic"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/rides_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Rides Available at Station"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sub_topic"
+        app:layout_constraintTop_toBottomOf="@+id/sub_topic" />
+
+    <ImageView
+        android:id="@+id/filter_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/rides_topic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rides_topic"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/filter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
