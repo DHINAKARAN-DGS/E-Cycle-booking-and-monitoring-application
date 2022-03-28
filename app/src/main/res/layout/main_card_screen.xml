@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:background="@drawable/card_bg_rectangle">
+
+
+    <TextView
+        android:id="@+id/app_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HERMES"
+        android:fontFamily="@font/bebas"
+        android:textSize="32dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cycle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MARK I"
+        android:fontFamily="@font/poppins"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cycle_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="MTB"
+        android:textColor="#C4C4C4"
+        app:layout_constraintEnd_toEndOf="@+id/cycle_name"
+        app:layout_constraintTop_toBottomOf="@+id/cycle_name" />
+
+    <ImageView
+        android:id="@+id/cycle_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycle_category"
+        app:srcCompat="@drawable/new_cycle" />
+
+    <TextView
+        android:id="@+id/no_cycles_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03"
+        android:layout_marginTop="16dp"
+        android:textSize="48dp"
+        android:textColor="#C4C4C4"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="@+id/cycle_img"
+        app:layout_constraintTop_toBottomOf="@+id/cycle_img" />
+
+    <TextView
+        android:id="@+id/avail_cycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available at \nBike Station"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="#c4c4c4"
+        app:layout_constraintBottom_toBottomOf="@+id/no_cycles_main"
+        app:layout_constraintStart_toEndOf="@+id/no_cycles_main"
+        app:layout_constraintTop_toTopOf="@+id/no_cycles_main" />
+
+    <TextView
+        android:id="@+id/per_hour_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="per hour"
+        android:fontFamily="@font/poppins"
+        android:textColor="#c4c4c4"
+        app:layout_constraintBottom_toBottomOf="@+id/avail_cycle"
+        app:layout_constraintEnd_toEndOf="@+id/cycle_img"
+        app:layout_constraintTop_toTopOf="@+id/avail_cycle" />
+
+    <TextView
+        android:id="@+id/rate_per_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$5"
+        android:fontFamily="@font/poppins"
+        android:textColor="#c4c4c4"
+        android:layout_marginRight="16dp"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/no_cycles_main"
+        app:layout_constraintEnd_toStartOf="@+id/per_hour_text"
+        app:layout_constraintTop_toTopOf="@+id/no_cycles_main" />
+
+    <TextView
+        android:id="@+id/gear_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Gear \nOptions"
+        android:layout_marginTop="8dp"
+
+        android:fontFamily="@font/poppins"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/no_cycles_main"
+        app:layout_constraintTop_toBottomOf="@+id/no_cycles_main" />
+
+    <TextView
+        android:id="@+id/gear_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:layout_marginLeft="64dp"
+        app:layout_constraintStart_toEndOf="@+id/gear_no"
+        app:layout_constraintTop_toTopOf="@+id/gear_no"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:textSize="32dp"
+        />
+
+    <TextView
+        android:id="@+id/gear_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="12"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:textSize="32dp"
+        app:layout_constraintStart_toEndOf="@+id/gear_one"
+        app:layout_constraintTop_toTopOf="@+id/gear_one" />
+
+    <TextView
+        android:id="@+id/gear_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:textSize="32dp"
+        app:layout_constraintStart_toEndOf="@+id/gear_two"
+        app:layout_constraintTop_toTopOf="@+id/gear_two" />
+
+    <TextView
+        android:id="@+id/gear_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:textSize="32dp"
+        app:layout_constraintStart_toEndOf="@+id/gear_three"
+        app:layout_constraintTop_toTopOf="@+id/gear_three" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
