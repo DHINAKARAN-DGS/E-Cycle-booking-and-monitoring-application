@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "49864736572",
+    "project_id": "hermes-smart-cycle",
+    "storage_bucket": "hermes-smart-cycle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49864736572:android:28cdd9593cc465b7c9e839",
+        "android_client_info": {
+          "package_name": "com.ecycle.hermes_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49864736572-9b7svh0pe6ptcb8eqdq4i1dihpuotapv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGOWzSTeEdAzSjcBGPivoaEjZNzAHhT4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49864736572-9b7svh0pe6ptcb8eqdq4i1dihpuotapv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
